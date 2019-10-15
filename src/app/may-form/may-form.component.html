@@ -1,0 +1,20 @@
+
+<mat-sidenav-container class="nav">
+  <mat-sidenav class="matSidenav" #sidenav mode="side" [(opened)]="opened">
+    <span id="b">Paweł Kaczmarek</span>
+
+    <br /><br />
+    <button mat-raised-button id="button" (click)="open()">Przyłącza wody</button>
+    <button mat-raised-button class="buttons" (click)="networks()">Sieci wody</button>
+    <button mat-raised-button class="buttons" (click)="networksAndConnections()">Sieci i przyłacza wody</button>
+    <button mat-raised-button class="buttons" (click)="sewers()">Kanalizacja</button>
+    <button mat-raised-button class="buttons" (click)="contact()">Kontakt</button>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+
+    <p><button class="buttonIcon" mat-button (click)="sidenav.toggle()">
+        <i class="material-icons md-36">menu</i>
+      </button></p>
+  </mat-sidenav-content>
+</mat-sidenav-container>
